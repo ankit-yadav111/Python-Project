@@ -21,9 +21,12 @@ for i in range(n):
             c+=1
     row.append(c)
 ans=[]
-for i in range(n):
+i=0
+while i<n:
+    i+=1
     ans.append("")
-for i in range(sl):
+i=0
+while i<s1:
     for j in range(n):
         if s[i]<=row[j]:
             row[j]-=s[i]
@@ -39,6 +42,7 @@ for i in range(sl):
                 k+=1
             ans[j]=res
             break
+    i+=1
 for i in range(n):
     a=list2[i]
     l=len(ans[i])
