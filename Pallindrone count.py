@@ -4,10 +4,10 @@ def palindrome(st):
         return 1
     return 0
 
-n=int(input())
-st=input()
-m=int(input())
-m_list = input().split()
+n=int(input("Enter the value of N: "))
+st=input("Enter the String: ")
+m=int(input("Enter the value of M: "))
+m_list = input("Enter the value of List Element: ").split()
 count=0
 for i in m_list:
     i=int(i)
@@ -15,4 +15,4 @@ for i in m_list:
         if palindrome(st[j:i+j:1]):
             count+=1
 print(count)
-        
+print("Program Ended:")
