@@ -4,10 +4,10 @@ def palindrome(st):
         return 1
     return 0
 
-n=int(input("Enter the value of N: "))
-st=input("Enter the String: ")
-m=int(input("Enter the value of M: "))
-m_list = input("Enter the value of List Element: ").split()
+n=int(input("Enter The Value Of N: "))
+st=input("Enter The String: ")
+m=int(input("Enter The Value Of M: "))
+m_list = input("Enter The Value Of List Element: ").split()
 count=0
 for i in m_list:
     i=int(i)
