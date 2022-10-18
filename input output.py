@@ -1,7 +1,7 @@
-def main(num):
-    f=1
-    for i in range(1,num+1):
-        f=f*num
-    return f
-x=main(int(input("Enter the Number: ")))
+def main(NUM):
+    F=1
+    for i in range(1,NUM+1):
+        F=F*NUM
+    return F
+x=main(int(input("Enter The Number: ")))
 print(x)
