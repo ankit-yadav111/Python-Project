@@ -1,18 +1,18 @@
 import operator
 def filterdict(file):
     newfile={}
-    for i in file.keys():
-        if file[i][3]=="1":
-            newfile[i]=file[i][2]
+    for I in file.keys():
+        if file[I][3]=="1":
+            newfile[I]=file[I][2]
     d = dict( sorted(newfile.items(), key=operator.itemgetter(1)))
     return d
 n= int(input())
 file={}
 s=0
-for i in range(n):
-    x=input().split()
-    s+=int(x[2][0])
-    file[i]=x
+for I in range(n):
+    X=input().split()
+    s+=int(X[2][0])
+    file[I]=X
 delfile = filterdict(file)
 m=int(input())
 for i in range(m):
@@ -20,11 +20,12 @@ for i in range(m):
     for j in delfile.keys():
         if int(delfile[j][0])>=int(x[1][0]):
             delfile.pop(j)
-            a=0
+            A=0
             for i in range(j):
-                a+=int(file[i][2][0])
-            print(f"{x[0]} {a}")
+                A+=int(file[i][2][0])
+            print(f"{x[0]} {A}")
             break;
     else:
         print(f"{x[0]} {s}")
         s+=int(x[1][0])
+print("Program Ended: ")
