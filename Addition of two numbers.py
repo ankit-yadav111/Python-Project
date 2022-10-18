@@ -1,3 +1,5 @@
-n=int(input("Enter the First Number: "))
-m=int(input("Enter the Second Number: "))
-print(n+m)
+N=int(input("Enter The First Number: "))
+M=int(input("Enter The Second Number: "))
+S=N+M
+print(f"Sum of {N} and {M} is {S}")
+print("Program End:")
