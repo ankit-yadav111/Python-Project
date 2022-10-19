@@ -14,7 +14,7 @@ for I in range(n):
     s+=int(X[2][0])
     file[I]=X
 delfile = filterdict(file)
-m=int(input())
+m=int(input("enter the data"))
 for i in range(m):
     x=input().split()
     for j in delfile.keys():
@@ -28,4 +28,4 @@ for i in range(m):
     else:
         print(f"{x[0]} {s}")
         s+=int(x[1][0])
-print("Program Ended: ")
+print("executed: ")
