@@ -1,6 +1,6 @@
-n=int(input())
+N=int(input())
 list2=[]
-for i in range(n):
+for i in range(N):
     s=input()
     list2.append(s)
 stud=input().split(",")
