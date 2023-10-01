@@ -1,8 +1,8 @@
 import sys
-print("HELLO!, WHAT IS UP!!!.")
+print("HELLO!, WHAT'S UP!!!.")
 print(f"FILE NAME IS {sys.argv[0]}")
 print(f"TOTAL NUMBER OF ARGUMENTS = {len(sys.argv)-1}")
-print("The VALUE OF ARGUMENTS: ")
+print("THE VALUE OF ARGUMENTS: ")
 for i in sys.argv:
    print(i)
-print("Program Ended")
+print("PROGRAM ENDED")
