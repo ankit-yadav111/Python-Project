@@ -4,12 +4,12 @@ def filterdict(file):
     for i in file.keys():
         if file[i][3]=="1":
             newfile[i]=file[i][2]
-    d = dict( sorted(newfile.items(), key=operator.itemgetter(1)))
-    return d
-n= int(input())
+    D = dict( sorted(newfile.items(), key=operator.itemgetter(1)))
+    return D
+N= int(input())
 file={}
 s=0
-for i in range(n):
+for i in range(N):
     x=input().split()
     s+=int(x[2][0])
     file[i]=x
